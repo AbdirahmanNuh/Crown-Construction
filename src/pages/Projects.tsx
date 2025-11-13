@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { X } from "lucide-react";
+import { X, Maximize2 } from "lucide-react";
 import project1 from "@/assets/project1.webp";
 import project2 from "@/assets/project2.webp";
 import project3 from "@/assets/project3.webp";
@@ -11,6 +11,7 @@ import project8 from "@/assets/project8.webp";
 
 const Projects = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [fullscreenVideo, setFullscreenVideo] = useState<number | null>(null);
 
   const projects = [
     { image: project1, title: "Luxury Villa - Interior", category: "Residential" },
@@ -102,7 +103,7 @@ const Projects = () => {
             {videos.map((video, index) => (
               <div
                 key={index}
-                className="rounded-lg overflow-hidden shadow-strong animate-fade-in-up"
+                className="rounded-lg overflow-hidden shadow-strong animate-fade-in-up relative"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="bg-secondary text-secondary-foreground p-4">
@@ -116,6 +117,14 @@ const Projects = () => {
                     allowFullScreen={true}
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                   />
+                  {/* Fullscreen button for mobile */}
+                  <button
+                    onClick={() => setFullscreenVideo(index)}
+                    className="absolute bottom-4 right-4 md:hidden bg-black/70 hover:bg-black/90 text-white p-2 rounded-full transition-all z-10"
+                    aria-label="Fullscreen"
+                  >
+                    <Maximize2 size={20} />
+                  </button>
                 </div>
               </div>
             ))}
@@ -141,6 +150,35 @@ const Projects = () => {
             className="max-w-full max-h-full object-contain"
             onClick={(e) => e.stopPropagation()}
           />
+        </div>
+      )}
+
+      {/* Fullscreen Video Modal for Mobile */}
+      {fullscreenVideo !== null && (
+        <div
+          className="fixed inset-0 z-50 bg-black/95 flex flex-col items-center justify-center p-4 animate-fade-in md:hidden"
+          onClick={() => setFullscreenVideo(null)}
+        >
+          <button
+            className="absolute top-4 right-4 text-white hover:text-primary transition-colors z-10"
+            onClick={() => setFullscreenVideo(null)}
+          >
+            <X size={32} />
+          </button>
+          <div
+            className="w-full h-full flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+              <iframe
+                src={videos[fullscreenVideo].embedUrl}
+                className="absolute top-0 left-0 w-full h-full"
+                style={{ border: "none", overflow: "hidden" }}
+                allowFullScreen={true}
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              />
+            </div>
+          </div>
         </div>
       )}
     </div>

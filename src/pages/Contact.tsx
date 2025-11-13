@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import project7 from "@/assets/project7.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -73,14 +74,20 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-accent text-white py-20">
-        <div className="container mx-auto px-4 text-center animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            Get in touch with us for your construction and consultancy needs
-          </p>
+      <section className="relative h-[400px] bg-secondary text-secondary-foreground">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: `url(${project7})` }}
+        />
+        <div className="relative h-full container mx-auto px-4 flex items-center justify-center text-center">
+          <div className="max-w-3xl animate-fade-in">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+            <p className="text-lg opacity-90">
+              Get in touch with us for your construction and consultancy needs
+            </p>
+          </div>
         </div>
       </section>
 

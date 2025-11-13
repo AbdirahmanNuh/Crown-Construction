@@ -35,14 +35,20 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-secondary to-secondary/90 text-secondary-foreground py-20">
-        <div className="container mx-auto px-4 text-center animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Projects</h1>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            Explore our portfolio of exceptional construction and design projects
-          </p>
+      <section className="relative h-[400px] bg-secondary text-secondary-foreground">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: `url(${project7})` }}
+        />
+        <div className="relative h-full container mx-auto px-4 flex items-center justify-center text-center">
+          <div className="max-w-3xl animate-fade-in">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Projects</h1>
+            <p className="text-lg opacity-90">
+              Explore our portfolio of exceptional construction and design projects
+            </p>
+          </div>
         </div>
       </section>
 

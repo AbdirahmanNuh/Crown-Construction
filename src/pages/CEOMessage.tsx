@@ -1,16 +1,23 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote } from "lucide-react";
+import project7 from "@/assets/project7.jpg";
 
 const CEOMessage = () => {
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-secondary to-secondary/90 text-secondary-foreground py-20">
-        <div className="container mx-auto px-4 text-center animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Message from Our CEO</h1>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            Leadership insights and our vision for the future
-          </p>
+      <section className="relative h-[400px] bg-secondary text-secondary-foreground">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: `url(${project7})` }}
+        />
+        <div className="relative h-full container mx-auto px-4 flex items-center justify-center text-center">
+          <div className="max-w-3xl animate-fade-in">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Message from Our CEO</h1>
+            <p className="text-lg opacity-90">
+              Leadership insights and our vision for the future
+            </p>
+          </div>
         </div>
       </section>
 
@@ -19,6 +26,19 @@ const CEOMessage = () => {
         <div className="container mx-auto px-4">
           <Card className="max-w-4xl mx-auto shadow-strong animate-fade-in-up">
             <CardContent className="p-12">
+              {/* CEO Image */}
+              <div className="flex justify-center mb-8">
+            <div className="relative w-64 h-80 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center text-white text-2xl font-bold shadow-strong overflow-hidden border-4 border-white">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-accent/80"></div>
+              <span className="relative z-10">CEO</span>
+              {/* Decorative frame elements */}
+              <div className="absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-white/50"></div>
+              <div className="absolute top-2 right-2 w-4 h-4 border-t-2 border-r-2 border-white/50"></div>
+              <div className="absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-white/50"></div>
+              <div className="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-white/50"></div>
+            </div>
+          </div>
+              
               <Quote className="w-16 h-16 text-primary mb-8" />
               
               <div className="space-y-6 text-muted-foreground leading-relaxed">

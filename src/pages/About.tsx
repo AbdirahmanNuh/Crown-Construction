@@ -22,14 +22,14 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[400px] bg-secondary text-secondary-foreground">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: `url(${project7})` }}
         />
-        <div className="relative h-full container mx-auto px-4 flex items-center">
+        <div className="relative h-full container mx-auto px-4 flex items-center justify-center text-center">
           <div className="max-w-3xl animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
             <p className="text-lg opacity-90">

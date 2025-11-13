@@ -28,9 +28,9 @@ const Home = () => {
   ];
 
   const stats = [
-    { value: "50+", label: "Projects Completed" },
+    { value: "500+", label: "Projects Completed" },
     { value: "10+", label: "Years Experience" },
-    { value: "100+", label: "Happy Clients" },
+    { value: "97%", label: "Happy Clients" },
     { value: "25+", label: "Team Members" },
   ];
 
@@ -158,6 +158,97 @@ const Home = () => {
                 <ArrowRight className="ml-2" size={18} />
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Project Videos Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Project Videos</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Watch our construction projects come to life
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div
+              className="rounded-lg overflow-hidden shadow-strong animate-fade-in-up"
+            >
+              <div className="bg-secondary text-secondary-foreground p-4">
+                <h3 className="font-semibold">Project Showcase 1</h3>
+              </div>
+              <div className="relative pb-[56.25%] h-0">
+                <iframe
+                  src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1352364943186496"
+                  className="absolute top-0 left-0 w-full h-full"
+                  style={{ border: "none", overflow: "hidden" }}
+                  allowFullScreen={true}
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                />
+              </div>
+            </div>
+            <div
+              className="rounded-lg overflow-hidden shadow-strong animate-fade-in-up"
+              style={{ animationDelay: "0.1s" }}
+            >
+              <div className="bg-secondary text-secondary-foreground p-4">
+                <h3 className="font-semibold">Project Showcase 2</h3>
+              </div>
+              <div className="relative pb-[56.25%] h-0">
+                <iframe
+                  src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F61561525103958%2Fvideos%2F1910937926390926%2F"
+                  className="absolute top-0 left-0 w-full h-full"
+                  style={{ border: "none", overflow: "hidden" }}
+                  allowFullScreen={true}
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CEO Message Section */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12 animate-fade-in">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Message from Our CEO</h2>
+              <p className="text-muted-foreground">
+                Insights and vision from our leadership
+              </p>
+            </div>
+            
+            <div className="bg-card rounded-lg shadow-lg p-8 animate-fade-in-up">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="md:w-1/3">
+                  <div className="w-48 h-48 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-white text-6xl font-bold">
+                    CEO
+                  </div>
+                </div>
+                <div className="md:w-2/3">
+                  <blockquote className="text-lg text-muted-foreground leading-relaxed mb-6">
+                    "At Plan Construction & Consultancy Company, we believe in building not just structures, 
+                    but lasting relationships with our clients. Our commitment to excellence, innovation, 
+                    and sustainability drives us to deliver projects that exceed expectations and stand 
+                    the test of time. Together, we are building the future of Somaliland."
+                  </blockquote>
+                  <cite className="font-semibold text-foreground">
+                    — Chief Executive Officer, Plan Construction & Consultancy Company
+                  </cite>
+                </div>
+              </div>
+              <div className="text-center mt-8">
+                <Link to="/ceo-message">
+                  <Button variant="outline" size="lg">
+                    Read Full Message
+                    <ArrowRight className="ml-2" size={18} />
+                  </Button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

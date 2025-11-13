@@ -2,6 +2,7 @@ import { Building2, PenTool, ClipboardCheck, Ruler, Wrench, Shield } from "lucid
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import project7 from "@/assets/project7.jpg";
 
 const Services = () => {
   const services = [
@@ -80,14 +81,20 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-accent text-white py-20">
-        <div className="container mx-auto px-4 text-center animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            Comprehensive construction and consultancy solutions for all your building needs
-          </p>
+      <section className="relative h-[400px] bg-secondary text-secondary-foreground">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: `url(${project7})` }}
+        />
+        <div className="relative h-full container mx-auto px-4 flex items-center justify-center text-center">
+          <div className="max-w-3xl animate-fade-in">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+            <p className="text-lg opacity-90">
+              Comprehensive construction and consultancy solutions for all your building needs
+            </p>
+          </div>
         </div>
       </section>
 

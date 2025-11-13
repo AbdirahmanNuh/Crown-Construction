@@ -23,6 +23,18 @@ const Footer = () => {
                 <Facebook size={20} />
               </a>
               <a
+                href="https://wa.me/252636379790"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+                aria-label="WhatsApp"
+              >
+                {/* Official WhatsApp logo SVG */}
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.24 12.79c-.22.6-1.22 1.16-1.7 1.23-.46.07-.99.1-1.54-.11-.35-.13-.81-.3-1.39-.58-2.45-1.09-4.05-3.63-4.17-3.79-.12-.16-1.01-1.34-1.01-2.55 0-1.21.64-1.81.87-2.05.23-.25.5-.31.67-.31.17 0 .34.01.49.06.15.05.23.12.34.25.22.24.46.58.58.78.12.2.16.35.22.58.06.23.03.43-.01.6-.04.17-.22.58-.32.78-.1.2-.21.25-.39.43-.17.17-.35.29-.01.58.34.29 1.68 1.4 3.89 2.22.52.22.93.35 1.25.45.32.1.5.08.69-.12.19-.2.78-.91.99-1.22.21-.31.42-.25.78-.15.36.1 2.25.95 2.64 1.12.39.17.65.26.75.4.1.14.1.8-.12 1.4z"/>
+                </svg>
+              </a>
+              <a
                 href="https://www.linkedin.com/company/plan-construction-consultancy-company/?originalSubdomain=so"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -97,7 +109,7 @@ const Footer = () => {
 
         <div className="border-t border-secondary-foreground/20 mt-8 pt-6 text-center">
           <p className="text-sm opacity-80">
-            © {new Date().getFullYear()} Plan Construction & Consultancy Company. All rights reserved.
+            Powered by Sidra Web Agency
           </p>
         </div>
       </div>

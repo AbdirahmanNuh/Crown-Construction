@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import CEOMessage from "./pages/CEOMessage";
@@ -22,7 +23,11 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
+        <div className="fixed top-0 left-0 right-0 z-50">
         <Header />
+      </div>
+      <div className="pt-16"> {/* Add padding to account for fixed header */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -35,6 +40,7 @@ const App = () => (
         </Routes>
         <Footer />
         <WhatsAppFloat />
+      </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

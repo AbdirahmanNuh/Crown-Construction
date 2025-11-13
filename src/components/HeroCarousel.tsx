@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import project1 from "@/assets/project1.jpg";
@@ -38,45 +37,47 @@ const HeroCarousel = () => {
     setCurrentSlide(index);
   };
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
-
   return (
     <div className="relative h-[600px] md:h-[700px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
+          className={`absolute inset-0 transition-all duration-2000 ease-in-out ${
+            index === currentSlide ? "opacity-100 scale-100" : "opacity-0 scale-110"
           }`}
         >
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className={`absolute inset-0 bg-cover bg-center transition-transform duration-[3000ms] ease-out ${
+              index === currentSlide ? "scale-105" : "scale-100"
+            }`}
             style={{ backgroundImage: `url(${slide.image})` }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
           
           <div className="relative h-full container mx-auto px-4 flex items-center">
-            <div className="max-w-2xl text-white animate-fade-in-up">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+            <div className={`max-w-2xl text-white transition-all duration-[2500ms] ease-out ${
+              index === currentSlide ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}>
+              <h1 className={`text-4xl md:text-6xl font-bold mb-4 leading-tight transition-all duration-[2800ms] delay-200 ease-out ${
+                index === currentSlide ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
+              }`}>
                 {slide.title}
               </h1>
-              <p className="text-lg md:text-xl mb-8 opacity-90">
+              <p className={`text-lg md:text-xl mb-8 opacity-90 transition-all duration-[2800ms] delay-400 ease-out ${
+                index === currentSlide ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
+              }`}>
                 {slide.subtitle}
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className={`flex flex-wrap gap-4 transition-all duration-[2800ms] delay-600 ease-out ${
+                index === currentSlide ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}>
                 <Link to="/projects">
                   <Button size="lg" className="bg-primary hover:bg-accent">
                     View Our Projects
                   </Button>
                 </Link>
                 <Link to="/contact">
-                  <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-secondary">
+                  <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-secondary bg-white/10 backdrop-blur-sm">
                     Get Started
                   </Button>
                 </Link>
@@ -86,19 +87,7 @@ const HeroCarousel = () => {
         </div>
       ))}
 
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-2 transition-all"
-      >
-        <ChevronLeft className="text-white" size={32} />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-2 transition-all"
-      >
-        <ChevronRight className="text-white" size={32} />
-      </button>
+
 
       {/* Dots Navigation */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-2">

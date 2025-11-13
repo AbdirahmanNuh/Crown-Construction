@@ -3,10 +3,10 @@ import { Building2, Users, CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import HeroCarousel from "@/components/HeroCarousel";
-import project3 from "@/assets/project3.jpg";
-import project4 from "@/assets/project4.jpg";
-import project5 from "@/assets/project5.jpg";
-import project7 from "@/assets/project7.jpg";
+import project3 from "@/assets/project3.webp";
+import project4 from "@/assets/project4.webp";
+import project5 from "@/assets/project5.webp";
+import project7 from "@/assets/project7.webp";
 
 const Home = () => {
   const services = [

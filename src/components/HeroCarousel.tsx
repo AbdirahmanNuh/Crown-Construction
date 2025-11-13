@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import project1 from "@/assets/project1.jpg";
-import project2 from "@/assets/project2.jpg";
-import project6 from "@/assets/project6.jpg";
+import project1 from "@/assets/project1.webp";
+import project2 from "@/assets/project2.webp";
+import project6 from "@/assets/project6.webp";
 
 const slides = [
   {

@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote } from "lucide-react";
-import project7 from "@/assets/project7.jpg";
+import project7 from "@/assets/project7.webp";
 
 const CEOMessage = () => {
   return (

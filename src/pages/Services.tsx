@@ -2,7 +2,7 @@ import { Building2, PenTool, ClipboardCheck, Ruler, Wrench, Shield } from "lucid
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import project7 from "@/assets/project7.jpg";
+import project7 from "@/assets/project7.webp";
 
 const Services = () => {
   const services = [

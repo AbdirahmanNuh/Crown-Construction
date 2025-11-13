@@ -1,6 +1,6 @@
 import { Target, Eye, Award, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import project7 from "@/assets/project7.jpg";
+import project7 from "@/assets/project7.webp";
 
 const About = () => {
   const values = [

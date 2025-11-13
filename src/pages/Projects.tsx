@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { X } from "lucide-react";
-import project1 from "@/assets/project1.jpg";
-import project2 from "@/assets/project2.jpg";
-import project3 from "@/assets/project3.jpg";
-import project4 from "@/assets/project4.jpg";
-import project5 from "@/assets/project5.jpg";
-import project6 from "@/assets/project6.jpg";
-import project7 from "@/assets/project7.jpg";
-import project8 from "@/assets/project8.jpg";
+import project1 from "@/assets/project1.webp";
+import project2 from "@/assets/project2.webp";
+import project3 from "@/assets/project3.webp";
+import project4 from "@/assets/project4.webp";
+import project5 from "@/assets/project5.webp";
+import project6 from "@/assets/project6.webp";
+import project7 from "@/assets/project7.webp";
+import project8 from "@/assets/project8.webp";
 
 const Projects = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);

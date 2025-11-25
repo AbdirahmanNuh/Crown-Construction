@@ -29,12 +29,12 @@ const Header = () => {
   return (
     <header
         className={`w-full transition-all duration-300 ${
-          isScrolled ? "bg-orange-50 shadow-strong" : "bg-orange-50"
+          isScrolled ? "bg-background shadow-strong" : "bg-background"
         }`}
       >
       {/* Thematic Scroller */}
-      <div className="bg-white border-b border-orange-200 overflow-hidden">
-        <div className="animate-scroll whitespace-nowrap py-2 text-xs text-orange-800 font-semibold">
+      <div className="bg-white border-b border-border overflow-hidden">
+        <div className="animate-scroll whitespace-nowrap py-2 text-xs text-secondary font-semibold">
           <span className="inline-block px-8">🏗️ Building Dreams, Creating Futures • 🏗️ Construction Excellence Since 2015 • 🏗️ Quality Construction Services • 🏗️ Your Trusted Building Partner • 🏗️ Innovation in Construction • 🏗️ Sustainable Building Solutions • 🏗️ Expert Consultancy Services</span>
         </div>
       </div>
@@ -45,17 +45,17 @@ const Header = () => {
             {/* Desktop Logo */}
             <img src={logo} alt="Crown Construction Logo" className="hidden sm:block h-12 w-auto flex-shrink-0 shadow-lg rounded-lg" />
             <div className="hidden sm:block min-w-0 flex-1">
-              <h1 className="text-gray-800 font-bold text-sm sm:text-lg leading-tight tracking-wide">
+              <h1 className="text-primary font-bold text-sm sm:text-lg leading-tight tracking-wide">
                 Crown Construction Company
               </h1>
-              <p className="text-orange-800 text-xs">Building Dreams, Creating Futures</p>
+              <p className="text-secondary text-xs">Building Dreams, Creating Futures</p>
             </div>
             {/* Mobile Logo - Matches Navigation Menu */}
             <div className="sm:hidden flex items-center space-x-4">
-              <img src={logo} alt="Crown Construction Logo" className="h-16 w-auto shadow-lg rounded-lg border-2 border-orange-200" />
+              <img src={logo} alt="Crown Construction Logo" className="h-16 w-auto shadow-lg rounded-lg border-2 border-secondary" />
               <div>
-                <h3 className="text-gray-800 font-bold text-xl">Crown Construction</h3>
-                <p className="text-orange-800 text-sm font-medium">Building Dreams, Creating Futures</p>
+                <h3 className="text-primary font-bold text-xl">Crown Construction</h3>
+                <p className="text-secondary text-sm font-medium">Building Dreams, Creating Futures</p>
               </div>
             </div>
           </Link>
@@ -68,22 +68,22 @@ const Header = () => {
                 to={link.path}
                 className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === link.path
-                    ? "text-white bg-orange-600"
-                    : "text-gray-800 hover:text-white hover:bg-orange-600"
+                    ? "text-primary-foreground bg-primary"
+                    : "text-primary hover:text-primary-foreground hover:bg-primary"
                 }`}
               >
                 {link.name}
               </Link>
             ))}
             <Link to="/contact">
-              <Button className="ml-4 bg-orange-600 text-white hover:bg-orange-700">Get a Quote</Button>
+              <Button className="ml-4 bg-secondary text-secondary-foreground hover:bg-accent">Get a Quote</Button>
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-gray-800 hover:text-orange-800"
+            className="lg:hidden p-2 text-primary hover:text-secondary"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -91,13 +91,13 @@ const Header = () => {
 
         {/* Mobile Navigation - Full Screen Overlay */}
         {isMobileMenuOpen && (
-          <div className="fixed inset-0 z-50 bg-orange-50 lg:hidden animate-fade-in w-full h-full">
+          <div className="fixed inset-0 z-50 bg-background lg:hidden animate-fade-in w-full h-full">
             <div className="flex flex-col h-full w-full px-6">
               {/* Close Button */}
               <div className="absolute top-6 right-6 z-10">
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-3 text-gray-800 hover:bg-orange-100 rounded-full transition-all bg-white shadow-md"
+                  className="p-3 text-primary hover:bg-muted rounded-full transition-all bg-white shadow-md"
                 >
                   <X size={28} />
                 </button>
@@ -106,16 +106,16 @@ const Header = () => {
               {/* Logo at top */}
               <div className="pt-16 pb-8">
                 <div className="flex items-center space-x-4">
-                  <img src={logo} alt="Crown Construction Logo" className="h-16 w-auto shadow-lg rounded-lg border-2 border-orange-200" />
+                  <img src={logo} alt="Crown Construction Logo" className="h-16 w-auto shadow-lg rounded-lg border-2 border-secondary" />
                   <div>
-                    <h3 className="text-gray-800 font-bold text-xl">Crown Construction</h3>
-                    <p className="text-orange-800 text-sm font-medium">Building Dreams, Creating Futures</p>
+                    <h3 className="text-primary font-bold text-xl">Crown Construction</h3>
+                    <p className="text-secondary text-sm font-medium">Building Dreams, Creating Futures</p>
                   </div>
                 </div>
               </div>
               
               {/* Separator */}
-              <div className="border-t border-orange-200/40 mb-8"></div>
+              <div className="border-t border-border/40 mb-8"></div>
               
               {/* Navigation Links */}
               <div className="flex flex-col space-y-4">
@@ -126,24 +126,24 @@ const Header = () => {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`flex items-center px-4 py-4 rounded-lg text-lg font-semibold transition-all transform hover:translate-x-2 ${
                       location.pathname === link.path
-                        ? "text-white bg-orange-600 shadow-lg border border-orange-600"
-                        : "text-gray-800 bg-white hover:bg-orange-100 hover:shadow-lg border border-orange-200/30"
+                        ? "text-primary-foreground bg-primary shadow-lg border border-primary"
+                        : "text-primary bg-white hover:bg-muted hover:shadow-lg border border-border/30"
                     }`}
                   >
                     {/* Professional icons for each menu item */}
                     <div className="mr-4 w-6 text-center">
-                      {index === 0 && <span className="text-orange-800">🏠</span>}
-                      {index === 1 && <span className="text-orange-800">👥</span>}
-                      {index === 2 && <span className="text-orange-800">💼</span>}
-                      {index === 3 && <span className="text-orange-800">🔧</span>}
-                      {index === 4 && <span className="text-orange-800">🏗️</span>}
-                      {index === 5 && <span className="text-orange-800">📞</span>}
+                      {index === 0 && <span className="text-secondary">🏠</span>}
+                      {index === 1 && <span className="text-secondary">👥</span>}
+                      {index === 2 && <span className="text-secondary">💼</span>}
+                      {index === 3 && <span className="text-secondary">🔧</span>}
+                      {index === 4 && <span className="text-secondary">🏗️</span>}
+                      {index === 5 && <span className="text-secondary">📞</span>}
                     </div>
                     {link.name}
                   </Link>
                 ))}
                 <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="mt-8">
-                  <Button className="w-full bg-orange-600 text-white hover:bg-orange-700 text-lg py-4 shadow-lg transform hover:scale-105 transition-all font-bold border-2 border-orange-600">
+                  <Button className="w-full bg-secondary text-secondary-foreground hover:bg-accent text-lg py-4 shadow-lg transform hover:scale-105 transition-all font-bold border-2 border-accent">
                     Get a Quote
                   </Button>
                 </Link>

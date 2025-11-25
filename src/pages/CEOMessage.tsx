@@ -47,8 +47,7 @@ const CEOMessage = () => {
                 </p>
 
                 <p>
-                  It is with great pride and gratitude that I welcome you to Plan Construction & 
-                  Consultancy Company. Since our establishment, we have been driven by a singular 
+                  It is with great pride and gratitude that I welcome you to Crown Construction Company. Since our establishment, we have been driven by a singular 
                   vision: to transform the construction landscape of Somaliland through excellence, 
                   innovation, and unwavering commitment to quality.
                 </p>
@@ -76,7 +75,7 @@ const CEOMessage = () => {
 
                 <p>
                   Whether you are planning a residential home, commercial development, or seeking 
-                  expert consultancy, Plan Construction is your trusted partner. We don't just build 
+                  expert consultancy, Crown Construction is your trusted partner. We don't just build 
                   structures; we build relationships, trust, and lasting value.
                 </p>
 
@@ -86,7 +85,7 @@ const CEOMessage = () => {
 
                 <div className="pt-8 border-t border-border mt-8">
                   <p className="font-semibold text-foreground text-xl">CEO</p>
-                  <p className="text-primary font-medium">Plan Construction & Consultancy Company</p>
+                  <p className="text-primary font-medium">Crown Construction Company</p>
                   <p className="text-sm mt-2">Hargeisa, Somaliland</p>
                 </div>
               </div>

@@ -11,17 +11,17 @@ import project7 from "@/assets/project7.webp";
 const Home = () => {
   const services = [
     {
-      icon: <Building2 className="w-12 h-12 text-primary" />,
+      icon: <Building2 className="w-12 h-12 text-gold-500" />,
       title: "Construction Management",
       description: "Expert oversight of your construction project from start to finish.",
     },
     {
-      icon: <Users className="w-12 h-12 text-primary" />,
+      icon: <Users className="w-12 h-12 text-gold-500" />,
       title: "Project Consultancy",
       description: "Strategic guidance to ensure project success and efficiency.",
     },
     {
-      icon: <CheckCircle2 className="w-12 h-12 text-primary" />,
+      icon: <CheckCircle2 className="w-12 h-12 text-gold-500" />,
       title: "Quality Assurance",
       description: "Rigorous quality control at every stage of construction.",
     },

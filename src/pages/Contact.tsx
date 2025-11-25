@@ -57,7 +57,7 @@ const Contact = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Address",
-      content: "2 floor, Dur-Dur Mall 2, Road No.2, Hargeisa, Somaliland",
+      content: "jigjiga-yar, Road No.2, Hargeisa, Somaliland",
     },
     {
       icon: <Phone className="w-6 h-6" />,

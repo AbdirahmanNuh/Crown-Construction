@@ -57,7 +57,7 @@ const About = () => {
                 developments.
               </p>
               <p>
-                Operating from our office at Dur-Dur Mall 2 in Hargeisa, we serve clients throughout 
+                Operating from our office at jigjiga-yar in Hargeisa, we serve clients throughout 
                 Somaliland and beyond, bringing modern construction practices and innovative solutions 
                 to every project we undertake.
               </p>

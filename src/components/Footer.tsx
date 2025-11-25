@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <img src={logo} alt="Crown Construction Logo" className="h-16 w-auto mb-4" />
-            <p className="text-sm opacity-90 mb-4">
+            <p className="text-sm mb-4">
               Leading construction and consultancy company delivering excellence in Somaliland.
             </p>
             <div className="flex space-x-4">
@@ -51,22 +51,22 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/about" className="text-sm opacity-90 hover:text-primary transition-colors">
+                <Link to="/about" className="text-sm hover:text-primary transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-sm opacity-90 hover:text-primary transition-colors">
+                <Link to="/services" className="text-sm hover:text-primary transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/projects" className="text-sm opacity-90 hover:text-primary transition-colors">
+                <Link to="/projects" className="text-sm hover:text-primary transition-colors">
                   Projects
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-sm opacity-90 hover:text-primary transition-colors">
+                <Link to="/contact" className="text-sm hover:text-primary transition-colors">
                   Contact
                 </Link>
               </li>
@@ -76,7 +76,7 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
-            <ul className="space-y-2 text-sm opacity-90">
+            <ul className="space-y-2 text-sm">
               <li>Construction Management</li>
               <li>Architectural Design</li>
               <li>Project Consultancy</li>
@@ -88,17 +88,16 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3">
-              <li className="flex items-start space-x-2 text-sm opacity-90">
+              <li className="flex items-start space-x-2 text-sm">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0" />
                 <span>jigjiga-yar, Hargeisa, Somaliland</span>
               </li>
-              <li className="flex items-center space-x-2 text-sm opacity-90">
-                <Phone size={18} className="flex-shrink-0" />
+<li className="flex items-center space-x-2 text-sm">
                 <a href="tel:+252634331642" className="hover:text-primary transition-colors">
                   +252 63 4331642
                 </a>
               </li>
-              <li className="flex items-center space-x-2 text-sm opacity-90">
+              <li className="flex items-center space-x-2 text-sm">
                 <Mail size={18} className="flex-shrink-0" />
                 <a href="mailto:info@crownconstruction.org" className="hover:text-primary transition-colors">
                   info@crownconstruction.org

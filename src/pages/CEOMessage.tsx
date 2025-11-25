@@ -15,8 +15,6 @@ const CEOMessage = () => {
           <div className="max-w-3xl animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Message from Our CEO</h1>
             <p className="text-lg opacity-90">
-              Leadership insights and our vision for the future
-            </p>
           </div>
         </div>
       </section>

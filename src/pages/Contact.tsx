@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import project7 from "@/assets/project7.webp";
+import Project7 from "@/assets/Project 7.webp";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -79,7 +79,7 @@ const Contact = () => {
       <section className="relative h-[400px] bg-secondary text-secondary-foreground">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: `url(${project7})` }}
+          style={{ backgroundImage: `url(${Project7})` }}
         />
         <div className="relative h-full container mx-auto px-4 flex items-center justify-center text-center">
           <div className="max-w-3xl animate-fade-in">

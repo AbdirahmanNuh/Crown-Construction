@@ -2,12 +2,13 @@ import { useState } from "react";
 import { X, Maximize2 } from "lucide-react";
 import project1 from "@/assets/project1.webp";
 import project2 from "@/assets/project2.webp";
-import project3 from "@/assets/project3.webp";
-import project4 from "@/assets/project4.webp";
-import project5 from "@/assets/project5.webp";
+import Project3 from "@/assets/Project3.webp";
+import Project4 from "@/assets/Project4.webp";
+import Project5 from "@/assets/Project5.webp";
 import project6 from "@/assets/project6.webp";
-import project7 from "@/assets/project7.webp";
-import project8 from "@/assets/project8.webp";
+import Project7 from "@/assets/Project 7.webp";
+import Project8 from "@/assets/Project8.webp";
+import Project9 from "@/assets/Project9.webp";
 
 const Projects = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -16,22 +17,23 @@ const Projects = () => {
   const projects = [
     { image: project1, title: "Luxury Villa - Interior", category: "Residential" },
     { image: project2, title: "Modern House - Exterior", category: "Residential" },
-    { image: project3, title: "Contemporary Bathroom", category: "Interior" },
-    { image: project4, title: "Spacious Living Room", category: "Interior" },
-    { image: project5, title: "Modern Villa Exterior", category: "Residential" },
+    { image: Project3, title: "Contemporary Bathroom", category: "Interior" },
+    { image: Project4, title: "Spacious Living Room", category: "Interior" },
+    { image: Project5, title: "Modern Villa Exterior", category: "Residential" },
     { image: project6, title: "Elegant House at Dusk", category: "Residential" },
-    { image: project7, title: "Architectural Masterpiece", category: "Residential" },
-    { image: project8, title: "Sophisticated Interior Space", category: "Interior" },
+    { image: Project7, title: "Architectural Masterpiece", category: "Residential" },
+    { image: Project8, title: "Sophisticated Interior Space", category: "Interior" },
+    { image: Project9, title: "Classic Interior Design", category: "Interior" },
   ];
 
-  const videos = [
+const videos = [
     {
       title: "Project Showcase 1",
-      embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1352364943186496",
+      embedUrl: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2102255113850526%2F&show_text=false&width=560&t=0",
     },
     {
       title: "Project Showcase 2",
-      embedUrl: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F61561525103958%2Fvideos%2F1910937926390926%2F",
+      embedUrl: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3179310865583274%2F&show_text=false&width=560&t=0",
     },
   ];
 
@@ -41,7 +43,7 @@ const Projects = () => {
       <section className="relative h-[400px] bg-secondary text-secondary-foreground">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: `url(${project7})` }}
+          style={{ backgroundImage: `url(${Project7})` }}
         />
         <div className="relative h-full container mx-auto px-4 flex items-center justify-center text-center">
           <div className="max-w-3xl animate-fade-in">

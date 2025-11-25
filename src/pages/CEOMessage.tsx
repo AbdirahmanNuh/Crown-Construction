@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote } from "lucide-react";
-import project7 from "@/assets/project7.webp";
+import Project7 from "@/assets/Project 7.webp";
 
 const CEOMessage = () => {
   return (
@@ -9,12 +9,12 @@ const CEOMessage = () => {
       <section className="relative h-[400px] bg-secondary text-secondary-foreground">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: `url(${project7})` }}
+          style={{ backgroundImage: `url(${Project7})` }}
         />
         <div className="relative h-full container mx-auto px-4 flex items-center justify-center text-center">
           <div className="max-w-3xl animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Message from Our CEO</h1>
-            <p className="text-lg opacity-90">
+            <p className="text-lg opacity-90">A message from our leader.</p>
           </div>
         </div>
       </section>

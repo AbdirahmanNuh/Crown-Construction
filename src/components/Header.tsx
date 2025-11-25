@@ -48,14 +48,14 @@ const Header = () => {
               <h1 className="text-primary font-bold text-sm sm:text-lg leading-tight tracking-wide">
                 Crown Construction Company
               </h1>
-              <p className="text-secondary text-xs">Building Dreams, Creating Futures</p>
+              <p className="text-secondary text-xs font-bold">Building Dreams, Creating Futures</p>
             </div>
             {/* Mobile Logo - Matches Navigation Menu */}
             <div className="sm:hidden flex items-center space-x-4">
               <img src={logo} alt="Crown Construction Logo" className="h-16 w-auto shadow-lg rounded-lg border-2 border-secondary" />
               <div>
                 <h3 className="text-primary font-bold text-xl">Crown Construction</h3>
-                <p className="text-secondary text-sm font-medium">Building Dreams, Creating Futures</p>
+                <p className="text-secondary text-sm font-bold">Building Dreams, Creating Futures</p>
               </div>
             </div>
           </Link>
@@ -109,7 +109,7 @@ const Header = () => {
                   <img src={logo} alt="Crown Construction Logo" className="h-16 w-auto shadow-lg rounded-lg border-2 border-secondary" />
                   <div>
                     <h3 className="text-primary font-bold text-xl">Crown Construction</h3>
-                    <p className="text-secondary text-sm font-medium">Building Dreams, Creating Futures</p>
+                    <p className="text-secondary text-sm font-bold">Building Dreams, Creating Futures</p>
                   </div>
                 </div>
               </div>

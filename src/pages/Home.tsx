@@ -3,10 +3,10 @@ import { Building2, Users, CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import HeroCarousel from "@/components/HeroCarousel";
-import project3 from "@/assets/project3.webp";
-import project4 from "@/assets/project4.webp";
-import project5 from "@/assets/project5.webp";
-import project7 from "@/assets/project7.webp";
+import Project3 from "@/assets/Project3.webp";
+import Project4 from "@/assets/Project4.webp";
+import Project5 from "@/assets/Project5.webp";
+import Project7 from "@/assets/Project 7.webp";
 
 const Home = () => {
   const services = [
@@ -80,12 +80,12 @@ const Home = () => {
             </div>
             <div className="grid grid-cols-2 gap-4 animate-fade-in">
               <img
-                src={project7}
+                src={Project7}
                 alt="Modern Architecture"
                 className="rounded-lg shadow-lg hover-lift"
               />
               <img
-                src={project4}
+                src={Project4}
                 alt="Elegant Interior"
                 className="rounded-lg shadow-lg hover-lift mt-8"
               />
@@ -115,7 +115,7 @@ const Home = () => {
               </div>
               <div className="relative pb-[56.25%] h-0">
                 <iframe
-                  src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1352364943186496"
+                  src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2102255113850526%2F&show_text=false&width=560&t=0"
                   className="absolute top-0 left-0 w-full h-full"
                   style={{ border: "none", overflow: "hidden" }}
                   allowFullScreen={true}
@@ -132,7 +132,7 @@ const Home = () => {
               </div>
               <div className="relative pb-[56.25%] h-0">
                 <iframe
-                  src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F61561525103958%2Fvideos%2F1910937926390926%2F"
+                  src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3179310865583274%2F&show_text=false&width=560&t=0"
                   className="absolute top-0 left-0 w-full h-full"
                   style={{ border: "none", overflow: "hidden" }}
                   allowFullScreen={true}
@@ -228,7 +228,7 @@ const Home = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[project3, project5, project7].map((img, index) => (
+            {[Project3, Project5, Project7].map((img, index) => (
               <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg hover-lift animate-fade-in">
                 <img
                   src={img}

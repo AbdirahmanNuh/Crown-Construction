@@ -18,18 +18,18 @@ All colors MUST be HSL.
     --popover-foreground: 220 13% 13%;
 
     /* Brand orange from logo */
-    --primary: 25 95% 52%;
+    --primary: 220 13% 25%;
     --primary-foreground: 0 0% 100%;
     
     /* Dark slate for contrast */
-    --secondary: 220 13% 18%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 48 33% 94%;
+    --secondary-foreground: 220 13% 13%;
 
     /* Warm neutral tones */
     --muted: 30 8% 95%;
     --muted-foreground: 220 13% 46%;
 
-    --accent: 28 90% 48%;
+    --accent: 220 13% 35%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -75,16 +75,16 @@ All colors MUST be HSL.
     --popover: 220 13% 18%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 25 95% 52%;
+    --primary: 220 13% 25%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 13% 24%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 220 13% 18%;
+    --secondary-foreground: 0 0% 98%;
 
     --muted: 220 13% 24%;
     --muted-foreground: 30 8% 65%;
 
-    --accent: 28 90% 48%;
+    --accent: 220 13% 35%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;

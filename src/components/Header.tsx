@@ -34,7 +34,7 @@ const Header = () => {
       >
       {/* Thematic Scroller */}
       <div className="bg-white border-b border-border overflow-hidden">
-        <div className="animate-scroll whitespace-nowrap py-2 text-xs text-secondary font-semibold">
+        <div className="animate-scroll whitespace-nowrap py-2 text-xs text-primary font-semibold">
           <span className="inline-block px-8">🏗️ Building Dreams, Creating Futures • 🏗️ Construction Excellence Since 2015 • 🏗️ Quality Construction Services • 🏗️ Your Trusted Building Partner • 🏗️ Innovation in Construction • 🏗️ Sustainable Building Solutions • 🏗️ Expert Consultancy Services</span>
         </div>
       </div>

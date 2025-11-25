@@ -9,8 +9,8 @@ const TopBar = () => {
           <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4 text-primary" />
-              <a href="mailto:info@planconstruction.org" className="text-sm text-primary hover:text-accent-foreground transition-colors">
-                info@planconstruction.org
+              <a href="mailto:info@crownconstruction.org" className="text-sm text-primary hover:text-accent-foreground transition-colors">
+                info@crownconstruction.org
               </a>
             </div>
             <div className="flex items-center space-x-2">

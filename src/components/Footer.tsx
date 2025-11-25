@@ -9,13 +9,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <img src={logo} alt="Plan Construction Logo" className="h-16 w-auto mb-4" />
+            <img src={logo} alt="Crown Construction Logo" className="h-16 w-auto mb-4" />
             <p className="text-sm opacity-90 mb-4">
               Leading construction and consultancy company delivering excellence in Somaliland.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/p/Plan-Construction-Consultancy-Company-61561525103958/"
+                href="https://www.facebook.com/p/Crown-Construction-Consultancy-Company-61561525103958/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
@@ -35,7 +35,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/company/plan-construction-consultancy-company/?originalSubdomain=so"
+                href="https://www.linkedin.com/company/crown-construction-consultancy-company/?originalSubdomain=so"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
@@ -99,8 +99,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2 text-sm opacity-90">
                 <Mail size={18} className="flex-shrink-0" />
-                <a href="mailto:info@planconstruction.org" className="hover:text-primary transition-colors">
-                  info@planconstruction.org
+                <a href="mailto:info@crownconstruction.org" className="hover:text-primary transition-colors">
+                  info@crownconstruction.org
                 </a>
               </li>
             </ul>

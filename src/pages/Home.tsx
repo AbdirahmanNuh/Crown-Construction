@@ -63,7 +63,7 @@ const Home = () => {
                 Building the Future of <span className="text-gradient">Somaliland</span>
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Plan Construction & Consultancy Company is a leading construction firm in Somaliland, 
+                Crown Construction & Consultancy Company is a leading construction firm in Somaliland, 
                 dedicated to delivering exceptional quality and innovative solutions. With years of 
                 experience and a team of skilled professionals, we transform visions into reality.
               </p>
@@ -164,13 +164,13 @@ const Home = () => {
                 </div>
                 <div className="md:w-2/3">
                   <blockquote className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    "At Plan Construction & Consultancy Company, we believe in building not just structures, 
+                    "At Crown Construction & Consultancy Company, we believe in building not just structures, 
                     but lasting relationships with our clients. Our commitment to excellence, innovation, 
                     and sustainability drives us to deliver projects that exceed expectations and stand 
                     the test of time. Together, we are building the future of Somaliland."
                   </blockquote>
                   <cite className="font-semibold text-foreground">
-                    — Chief Executive Officer, Plan Construction & Consultancy Company
+                    — Chief Executive Officer, Crown Construction & Consultancy Company
                   </cite>
                 </div>
               </div>

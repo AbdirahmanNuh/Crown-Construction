@@ -68,8 +68,8 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      content: "info@planconstruction.org",
-      link: "mailto:info@planconstruction.org",
+      content: "info@crownconstruction.org",
+      link: "mailto:info@crownconstruction.org",
     },
   ];
 

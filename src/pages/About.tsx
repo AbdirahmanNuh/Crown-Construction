@@ -46,7 +46,7 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-8 text-center">Who We Are</h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Plan Construction & Consultancy Company is a premier construction firm established 
+                Crown Construction & Consultancy Company is a premier construction firm established 
                 in Hargeisa, Somaliland. With over a decade of experience in the construction industry, 
                 we have built a reputation for delivering high-quality projects on time and within budget.
               </p>

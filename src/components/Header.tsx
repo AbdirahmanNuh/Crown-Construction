@@ -43,18 +43,18 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3 min-w-0 flex-1">
             {/* Desktop Logo */}
-            <img src={logo} alt="Plan Construction Logo" className="hidden sm:block h-12 w-auto flex-shrink-0 shadow-lg rounded-lg" />
+            <img src={logo} alt="Crown Construction Logo" className="hidden sm:block h-12 w-auto flex-shrink-0 shadow-lg rounded-lg" />
             <div className="hidden sm:block min-w-0 flex-1">
               <h1 className="text-gray-800 font-bold text-sm sm:text-lg leading-tight tracking-wide">
-                Plan Construction & Consultancy Company
+                Crown Construction Company
               </h1>
               <p className="text-orange-800 text-xs">Building Dreams, Creating Futures</p>
             </div>
             {/* Mobile Logo - Matches Navigation Menu */}
             <div className="sm:hidden flex items-center space-x-4">
-              <img src={logo} alt="Plan Construction Logo" className="h-16 w-auto shadow-lg rounded-lg border-2 border-orange-200" />
+              <img src={logo} alt="Crown Construction Logo" className="h-16 w-auto shadow-lg rounded-lg border-2 border-orange-200" />
               <div>
-                <h3 className="text-gray-800 font-bold text-xl">Plan Construction</h3>
+                <h3 className="text-gray-800 font-bold text-xl">Crown Construction</h3>
                 <p className="text-orange-800 text-sm font-medium">Building Dreams, Creating Futures</p>
               </div>
             </div>
@@ -106,9 +106,9 @@ const Header = () => {
               {/* Logo at top */}
               <div className="pt-16 pb-8">
                 <div className="flex items-center space-x-4">
-                  <img src={logo} alt="Plan Construction Logo" className="h-16 w-auto shadow-lg rounded-lg border-2 border-orange-200" />
+                  <img src={logo} alt="Crown Construction Logo" className="h-16 w-auto shadow-lg rounded-lg border-2 border-orange-200" />
                   <div>
-                    <h3 className="text-gray-800 font-bold text-xl">Plan Construction</h3>
+                    <h3 className="text-gray-800 font-bold text-xl">Crown Construction</h3>
                     <p className="text-orange-800 text-sm font-medium">Building Dreams, Creating Futures</p>
                   </div>
                 </div>

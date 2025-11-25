@@ -73,38 +73,38 @@ const Preloader = ({ onLoadingComplete }: { onLoadingComplete: () => void }) => 
   if (!isLoading) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] bg-gradient-to-br from-orange-50 to-orange-100 flex items-center justify-center transition-opacity duration-300">
+    <div className="fixed inset-0 z-[9999] bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center transition-opacity duration-300">
       <div className="text-center animate-fade-in-up">
         {/* Logo with enhanced animations */}
         <div className="mb-8">
-          <div className="w-24 h-24 mx-auto bg-orange-600 rounded-full flex items-center justify-center shadow-lg animate-pulse-glow">
+          <div className="w-24 h-24 mx-auto bg-gray-800 rounded-full flex items-center justify-center shadow-lg animate-pulse-glow">
             <span className="text-white text-3xl font-bold">🏗️</span>
           </div>
         </div>
         
         {/* Company Name with staggered animation */}
-        <h2 className="text-3xl font-bold text-orange-800 mb-2 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+        <h2 className="text-3xl font-bold text-gray-800 mb-2 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
           Plan Construction
         </h2>
-        <p className="text-orange-600 mb-8 text-lg animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+        <p className="text-gray-600 mb-8 text-lg animate-fade-in-up" style={{animationDelay: '0.4s'}}>
           Building Dreams, Creating Futures
         </p>
         
         {/* Progress Bar with enhanced styling */}
         <div className="w-64 mx-auto mb-6 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-          <div className="bg-orange-200 rounded-full h-3 overflow-hidden shadow-inner">
+          <div className="bg-gray-200 rounded-full h-3 overflow-hidden shadow-inner">
             <div 
-              className="bg-gradient-to-r from-orange-500 to-orange-600 h-full rounded-full transition-all duration-500 ease-out shadow-sm"
+              className="bg-gradient-to-r from-gray-500 to-gray-600 h-full rounded-full transition-all duration-500 ease-out shadow-sm"
               style={{ width: `${progress}%` }}
             />
           </div>
           <div className="text-center mt-2">
-            <span className="text-sm font-semibold text-orange-700">{Math.round(progress)}%</span>
+            <span className="text-sm font-semibold text-gray-700">{Math.round(progress)}%</span>
           </div>
         </div>
         
         {/* Loading Text with dynamic messages */}
-        <p className="text-sm text-orange-600 animate-pulse animate-fade-in-up" style={{animationDelay: '0.8s'}}>
+        <p className="text-sm text-gray-600 animate-pulse animate-fade-in-up" style={{animationDelay: '0.8s'}}>
           {progress < 25 ? "Initializing systems..." : 
            progress < 50 ? "Loading company assets..." : 
            progress < 75 ? "Preparing your experience..." : 
@@ -113,9 +113,9 @@ const Preloader = ({ onLoadingComplete }: { onLoadingComplete: () => void }) => 
         
         {/* Subtle loading dots */}
         <div className="flex justify-center space-x-1 mt-4">
-          <div className="w-2 h-2 bg-orange-400 rounded-full animate-bounce" style={{animationDelay: '0s'}}></div>
-          <div className="w-2 h-2 bg-orange-500 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
-          <div className="w-2 h-2 bg-orange-600 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
+          <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '0s'}}></div>
+          <div className="w-2 h-2 bg-gray-500 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
+          <div className="w-2 h-2 bg-gray-600 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
         </div>
       </div>
     </div>

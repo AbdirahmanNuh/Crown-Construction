@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Facebook, Linkedin, MapPin, Mail, Phone } from "lucide-react";
+import { Facebook, MapPin, Mail, Phone } from "lucide-react";
+import TiktokIcon from "./TiktokIcon";
 import logo from "@/assets/logo.webp";
 
 const Footer = () => {
@@ -15,7 +16,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/p/Crown-Construction-Consultancy-Company-61561525103958/"
+                href="https://www.facebook.com/profile.php?id=61576200656378"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
@@ -23,7 +24,7 @@ const Footer = () => {
                 <Facebook size={20} />
               </a>
               <a
-                href="https://wa.me/252636379790"
+                href="https://wa.me/252634331642"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
@@ -35,12 +36,12 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/company/crown-construction-consultancy-company/?originalSubdomain=so"
+                href="https://www.tiktok.com/@crown.csc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
               >
-                <Linkedin size={20} />
+                <TiktokIcon size={20} />
               </a>
             </div>
           </div>
@@ -93,8 +94,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2 text-sm opacity-90">
                 <Phone size={18} className="flex-shrink-0" />
-                <a href="tel:+252636379790" className="hover:text-primary transition-colors">
-                  +252 63 6379790
+                <a href="tel:+252634331642" className="hover:text-primary transition-colors">
+                  +252 63 4331642
                 </a>
               </li>
               <li className="flex items-center space-x-2 text-sm opacity-90">
